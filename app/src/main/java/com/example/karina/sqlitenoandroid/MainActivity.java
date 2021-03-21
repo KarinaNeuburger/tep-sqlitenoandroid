@@ -110,34 +110,6 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Carros");
 
-        /**Exemplo na memória
-        String query = "select sqlite_version() AS sqlite_version";
-        SQLiteDatabase db = SQLiteDatabase.openOrCreateDatabase(":memory:", null);
-        Cursor cursor = db.rawQuery(query, null);
-        String sqliteversion = "";
-
-        if (cursor.moveToNext()){
-            sqliteversion = cursor.getString(0);
-        }
-
-        Log.i("Information", sqliteversion);
-
-        //Criar tabela
-        db.execSQL("CREATE TABLE teste (id integer primary key autoincrement, nome text);");
-
-        //Inserir
-        db.execSQL("INSERT INTO teste(nome) VALUES('Luis'),('Marco'),('Rodrigo');");
-
-        // Recuperar registros
-        Cursor c = db.rawQuery("SELECT * FROM teste", null);
-        if(!c.moveToFirst()){return;}
-
-        do{
-            Log.i("INFORMATION", "Nome: " + c.getString(1));
-        }while(c.moveToNext());
-
-         Fim do exemplo na memória **/
-
         // Botões e campos
         btnPrimeiro = findViewById(R.id.btnPrimeiro);
         btnProximo = findViewById(R.id.btnProximo);
