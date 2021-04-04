@@ -1,7 +1,7 @@
 SQLite no Android
 ===================================
 
-Exemplo de uso do SQLite com Andoid Studio
+Exemplo de uso do SQLite com Andoid Studio <br>
 Andoid Studio SQLite exemple
 
 Screenshots
